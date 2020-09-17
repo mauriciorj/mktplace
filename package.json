@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "name": "pearly-app",
+    "workspaces": {
+      "packages": [
+        "server",
+        "client",
+        "manager"
+      ]
+    },
+    "version": "1.0.0"
+  }
+  

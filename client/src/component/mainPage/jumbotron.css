@@ -1,0 +1,20 @@
+.jumbotron-main-page-left-side{
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.jumbotron-main-page-left-title{
+    font-weight: 500 !important;
+}
+
+.jumbotron-main-page-left-sub-title{
+    font-weight: 400 !important;
+}
+
+.jumbotron-main-page-bottom-border{
+    padding-top: 40px;
+    border-bottom: 1px solid #d9d9d9;
+}
