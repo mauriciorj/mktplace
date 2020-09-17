@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "rootDir": "src",
+      "baseUrl": "src",
+      "lib": ["esnext"],
+      // "target": "es2018", // enable for zeit
+      "skipLibCheck": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true
+    }
+  }
+  

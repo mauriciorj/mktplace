@@ -1,0 +1,74 @@
+.createAccountUser-title-row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.createAccountUser-title{
+    text-align: center;
+    font-weight: 500 !important;
+    padding-bottom: 30px;
+}
+
+.createAccountUser-text-row{
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.createAccountUser-text{
+    text-align: left;
+}
+
+.createAccountUser-form-col{
+    border: 1px solid rgba(204, 204, 204, 0.933);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+.form-country{
+    width: 300px !important;
+}
+
+.form-province{
+    width: 300px !important;
+}
+
+.form-year{
+    width: 80px !important;
+    margin-right: 10px;
+}
+
+.form-month{
+    width: 130px !important;
+    margin-right: 10px;
+}
+
+.form-day{
+    width: 80px !important;
+}
+
+.form-zipcode{
+    width: 120px !important;
+}
+
+.read-document{
+    padding-top: 10px;
+}
+
+.read-document-checkbox{
+    padding-top: 5px;
+    padding-left: 25px;
+    font-style: italic;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

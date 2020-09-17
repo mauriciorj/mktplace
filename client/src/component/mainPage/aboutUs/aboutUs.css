@@ -1,0 +1,17 @@
+.aboutUs-title-row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutUs-title{
+    text-align: left;
+    font-weight: 500 !important;
+}
+
+.aboutUs-text-row{
+    padding-bottom: 80px;
+}
+
+.aboutUs-text{
+    text-align: left;
+}
