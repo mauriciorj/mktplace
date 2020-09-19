@@ -2,15 +2,15 @@ import React from 'react'
 
 import { Layout } from 'antd';
 
-import HeaderMainPage from '../../../component/mainPage/header/headerMainPage'
+import HeaderMainPage from '../../../component/mainPage/header/header'
 import SeeYouSoon from '../../../component/mainPage/seeYouSoon/seeYouSoon'
-import FooterMainPage from '../../../component/mainPage/footer/footerMainPage'
+import FooterMainPage from '../../../component/mainPage/footer/footer'
 
-import './logOutUserPage.css'
+import './userLogOutPage.css'
 
 const { Header, Content, Footer } = Layout;
 
-const mainPage = () => {
+const userLogOutPage = () => {
 
     return(
         <Layout className="layout">
@@ -27,4 +27,4 @@ const mainPage = () => {
     )
 }
 
-export default mainPage
+export default userLogOutPage

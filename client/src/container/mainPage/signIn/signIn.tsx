@@ -1,13 +1,13 @@
 import React from 'react'
 
-import HeaderMainPage from '../../../component/mainPage/header/headerMainPage'
-import FooterMainPage from '../../../component/mainPage/footer/footerMainPage'
+import HeaderMainPage from '../../../component/mainPage/header/header'
+import FooterMainPage from '../../../component/mainPage/footer/footer'
 import SignIn from '../../../component/mainPage/signIn/signIn'
 
 import { Layout } from 'antd';
 const { Header, Content, Footer } = Layout;
 
-const createAccountUser = () => {
+const signIn = () => {
 
     return (
         <Layout className="layout">
@@ -25,4 +25,4 @@ const createAccountUser = () => {
 
 }
 
-export default createAccountUser
+export default signIn

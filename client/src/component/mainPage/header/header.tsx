@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 import { Menu, Col, Row, Button, Typography } from 'antd'
 
-import './headerMainPage.css'
+import './header.css'
 
-const headerMainPage = () => {
+const header = () => {
 
     return (
         <Row justify="start">
@@ -27,4 +27,4 @@ const headerMainPage = () => {
 
 }
 
-export default headerMainPage
+export default header

@@ -11,9 +11,9 @@ import Pricing from './container/mainPage/pricing/pricing'
 import ContactUs from './container/mainPage/contactUs/contactUs'
 import CreateAccountUser from './container/mainPage/createAccount/createAccountUser'
 import SignIn from './container/mainPage/signIn/signIn'
-import UserMainPage from './container/userPage/mainUserPage/mainUserPage'
-import LogOutUser from './container/mainPage/logOutUserPage/logOutUserPage'
-import UserComponent from './container/userPage/userSettings/initialUserSetting'
+import UserMainPage from './container/userPage/mainPage/mainPage'
+import UserLogOut from './container/mainPage/userLogOutPage/userLogOutPage'
+import UserSettingsPersonal from './container/userPage/settings/settingsPersonal'
 
 function App() {
   return (
@@ -26,9 +26,9 @@ function App() {
         <Route path="/contactUs" component={ContactUs} />
         <Route path="/createAccountUser" component={CreateAccountUser} />
         <Route path="/signIn" component={SignIn} />
-        <Route path="/userMainPage" component={UserMainPage} />
-        <Route path="/logOutUser" component={LogOutUser} />
-        <Route path="/userSettings" component={UserComponent} />
+        <Route path="/user/mainPage" component={UserMainPage} />
+        <Route path="/user/logOut" component={UserLogOut} />
+        <Route path="/user/settings/personal" component={UserSettingsPersonal} />
         <Route path="/" component={MainPage} />
       </Switch>
     </>

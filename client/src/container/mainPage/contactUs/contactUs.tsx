@@ -1,7 +1,7 @@
 import React from 'react'
 
-import HeaderMainPage from '../../../component/mainPage/header/headerMainPage'
-import FooterMainPage from '../../../component/mainPage/footer/footerMainPage'
+import HeaderMainPage from '../../../component/mainPage/header/header'
+import FooterMainPage from '../../../component/mainPage/footer/footer'
 import ContactUs from '../../../component/mainPage/contactUs/contactUs'
 
 import { Layout } from 'antd';

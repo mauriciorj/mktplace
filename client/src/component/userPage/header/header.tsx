@@ -5,9 +5,9 @@ import { Menu, Col, Row, Typography } from 'antd'
 
 import { SettingOutlined, LogoutOutlined, MenuOutlined } from '@ant-design/icons'
 
-import './headerUserPage.css'
+import './header.css'
 
-const headerMainPage = () => {
+const header = () => {
 
     return (
         <Row>
@@ -17,8 +17,8 @@ const headerMainPage = () => {
             <Col span={14}>
                 <Menu mode="horizontal" className="menu-header">
                     <Menu.SubMenu key="SubMenu" className="sub-menu-header" icon={<MenuOutlined />} title="Mauricio M.">
-                        <Menu.Item key="setting:1" className="sub-menu-item-header">Settings <SettingOutlined /></Menu.Item>
-                        <Menu.Item key="setting:2" className="sub-menu-item-header"><Link to="/logOutUser">Log Out <LogoutOutlined /></Link></Menu.Item>
+                        <Menu.Item key="setting:1" className="sub-menu-item-header"><Link to="/user/settings/personal">Settings <SettingOutlined /></Link></Menu.Item>
+                        <Menu.Item key="setting:2" className="sub-menu-item-header"><Link to="/user/logOutUser">Log Out <LogoutOutlined /></Link></Menu.Item>
                     </Menu.SubMenu>
                 </Menu>
             </Col>
@@ -27,4 +27,4 @@ const headerMainPage = () => {
 
 }
 
-export default headerMainPage
+export default header

@@ -2,12 +2,12 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-import './footerUserPage.css'
+import './footer.css'
 import { Row, Col, List } from 'antd';
 
 import { FacebookOutlined, InstagramOutlined } from '@ant-design/icons'
 
-const footerMainPage = () => {
+const footer = () => {
 
     return (
         <>
@@ -39,4 +39,4 @@ const footerMainPage = () => {
     )
 
 }
-export default footerMainPage
+export default footer

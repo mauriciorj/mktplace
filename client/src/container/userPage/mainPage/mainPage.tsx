@@ -1,16 +1,16 @@
 import React from 'react'
 
 import { Layout } from 'antd';
-import './mainUserPage.css'
+import './mainPage.css'
 
-import HeaderPageUser from '../../../component/userPage/headerUserPage/headerUserPage'
+import HeaderPageUser from '../../../component/userPage/header/header'
 import SearchSession from '../../../component/userPage/searchSession/searchSession'
-import FooterUserPage from '../../../component/userPage/footerUserPage/footerUserPage'
-import InitialUserPage from '../../../component/userPage/initialUserPage/initialUserPage'
+import FooterUserPage from '../../../component/userPage/footer/footer'
+import InitialUserPage from '../../../component/userPage/initialPage/initialPage'
 
 const { Header, Content, Footer } = Layout;
 
-const mainPageUser = () => {
+const mainPage = () => {
 
     return(
         <Layout className="layout">
@@ -29,4 +29,4 @@ const mainPageUser = () => {
 
 }
 
-export default mainPageUser
+export default mainPage

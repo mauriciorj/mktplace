@@ -2,13 +2,12 @@ import React from 'react'
 
 import HeaderPageUser from '../../../component/userPage/headerUserPage/headerUserPage'
 import UserSettingsSideBar from '../../../component/userPage/userSettings/userSettingsSideBar'
-import FooterUserPage from '../../../component/userPage/footerUserPage/footerUserPage'
+import FooterUserPage from '../../../component/userPage/footer/footerUserPage'
 
-import './initialUserSetting'
 import { Layout } from 'antd'
 const { Header, Footer, Sider, Content } = Layout;
 
-const initialUserSetting = () => {
+const personalUserSetting = () => {
 
     return (
         <Layout className="layout">
@@ -29,4 +28,4 @@ const initialUserSetting = () => {
 
 }
 
-export default initialUserSetting
+export default personalUserSetting

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import './userSettingsSideBar.css'
+import './settingsSideBar.css'
 
 import { Col, Row, List } from 'antd'
 import { UserOutlined, UnlockOutlined, DollarOutlined } from '@ant-design/icons'
 
-const userSettingsSideBar = () => {
+const settingsSideBar = () => {
 
     return (
         <Row className="user-settings-sidebar">
@@ -23,4 +23,4 @@ const userSettingsSideBar = () => {
 
 }
 
-export default userSettingsSideBar
+export default settingsSideBar

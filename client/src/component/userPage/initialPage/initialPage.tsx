@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Row, Col, Typography } from 'antd'
 
-import './initialUserPage.css'
+import './initialPage.css'
 
-const initialUserPage = () => {
+const initialPage = () => {
 
     return (
         <>
@@ -18,4 +18,4 @@ const initialUserPage = () => {
 
 }
 
-export default initialUserPage
+export default initialPage
