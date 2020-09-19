@@ -1,8 +1,8 @@
 import React from 'react'
 
-import HeaderPageUser from '../../../component/userPage/headerUserPage/headerUserPage'
-import UserSettingsSideBar from '../../../component/userPage/userSettings/userSettingsSideBar'
-import FooterUserPage from '../../../component/userPage/footer/footerUserPage'
+import HeaderPageUser from '../../../component/userPage/header/header'
+import UserSettingsSideBar from '../../../component/userPage/settings/settingsSideBar'
+import FooterUserPage from '../../../component/userPage/footer/footer'
 
 import { Layout } from 'antd'
 const { Header, Footer, Sider, Content } = Layout;
