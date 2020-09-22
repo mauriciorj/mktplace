@@ -1,5 +1,5 @@
 .user-settings-sidebar{
-    padding-top: 10px;
+    padding-top: 40px;
     padding-bottom: 100px;
 }
 
@@ -20,11 +20,5 @@
 
 .ant-list-header{
     border: 0px transparent !important;
-    color: #595959;
-}
-
-.side-bar-home-title{
-    font-size: 0.9rem;
-    font-weight: 700 !important;
     color: #595959;
 }
