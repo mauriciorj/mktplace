@@ -6,7 +6,6 @@ import PersonalInfo from '../../../component/userPage/settings/personal/personal
 import FooterUserPage from '../../../component/userPage/footer/footer'
 
 import { Layout } from 'antd'
-
 const { Header, Footer, Sider, Content } = Layout;
 
 const settingsPersonal = () => {
