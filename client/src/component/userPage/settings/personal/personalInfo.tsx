@@ -1,16 +1,60 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import defaultAvatar from '../../../../assets/img/avatar/default-avatar.jpg'
+import defaultAvatar from "../../../../assets/img/avatar/default-avatar.jpg";
 
-import { Row, Col, Image, Button, Descriptions, Space } from "antd";
+import {
+  Row,
+  Col,
+  Image,
+  Button,
+  Descriptions,
+  Space,
+  Divider,
+  Breadcrumb,
+} from "antd";
+import { HomeOutlined, SettingOutlined, UserOutlined } from "@ant-design/icons";
 import "./personalInfo.css";
 
 const personalInfo = () => {
   return (
     <>
-      <Row className="row-avatar">
-        <Col offset={1}><Image src={defaultAvatar} width={100}/></Col>
-        <Col offset={1}  className="space-align"><Space align="center" direction="horizontal">Mc Fly Coffee, Johnny</Space></Col>
+      <Row className="settings-breadcrumb">
+        <Col offset={1} span={23}>
+          <Breadcrumb>
+            <Breadcrumb.Item>
+              <Link to="/user/mainPage">
+                <HomeOutlined />
+                <span> Home</span>
+              </Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <Link to="/user/settings/personal">
+                <SettingOutlined />
+                <span> Settings </span>
+              </Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <UserOutlined />
+              <span> Personal Information</span>
+            </Breadcrumb.Item>
+          </Breadcrumb>
+        </Col>
+      </Row>
+      <Row>
+        <Col offset={1}>
+          <Image src={defaultAvatar} width={100} />
+        </Col>
+        <Col offset={1} className="space-align">
+          <Space align="center" direction="horizontal">
+            Mc Fly Coffee, Johnny
+          </Space>
+        </Col>
+      </Row>
+      <Row>
+        <Col offset={1} span={12}>
+          <Divider plain />
+        </Col>
       </Row>
       <Row justify="start">
         <Col offset={1} span={15} className="col-editInfo">
@@ -44,7 +88,7 @@ const personalInfo = () => {
             </Descriptions.Item>
           </Descriptions>
           <Button type="primary" className="button-editInfo">
-              Edit Info
+            Edit Info
           </Button>
         </Col>
       </Row>

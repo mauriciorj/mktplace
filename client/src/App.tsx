@@ -14,6 +14,8 @@ import SignIn from './container/mainPage/signIn/signIn'
 import UserMainPage from './container/userPage/mainPage/mainPage'
 import UserLogOut from './container/mainPage/userLogOutPage/userLogOutPage'
 import UserSettingsPersonal from './container/userPage/settings/settingsPersonal'
+import UserSettingsSecurity from './container/userPage/settings/security'
+import UserSettingsBilling from './container/userPage/settings/billing'
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/user/mainPage" component={UserMainPage} />
         <Route path="/user/logOut" component={UserLogOut} />
         <Route path="/user/settings/personal" component={UserSettingsPersonal} />
+        <Route path="/user/settings/security" component={UserSettingsSecurity} />
+        <Route path="/user/settings/billing" component={UserSettingsBilling} />
         <Route path="/" component={MainPage} />
       </Switch>
     </>

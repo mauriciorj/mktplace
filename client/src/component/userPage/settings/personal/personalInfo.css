@@ -1,6 +1,7 @@
-.row-avatar{
-    padding-bottom: 40px;
+.settings-breadcrumb{
+    padding-bottom: 20px;
 }
+
 .space-align{
     display: flex;
     align-item: flex-start;
