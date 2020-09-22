@@ -99,7 +99,6 @@ const CreateAccountUser = () => {
                     <Typography.Title level={3} className="createAccountUser-title">Create Account User</Typography.Title>
                     <Form
                         labelCol={{ span: 5 }}
-                        wrapperCol={{ span: 17 }}
                         layout="horizontal"
                         initialValues={{ size: 'default' }}
                         size="large"
@@ -177,7 +176,7 @@ const CreateAccountUser = () => {
                             <Checkbox>I agree with all conditions and terms.</Checkbox>
                             <Space className="read-document-checkbox"><Typography.Text>*Click here to read the document</Typography.Text></Space>
                         </Form.Item>
-                        <Form.Item wrapperCol={{ offset: 5 }}>
+                        <Form.Item wrapperCol={{ offset: 7 }}>
                             <Button type="primary" htmlType="submit">
                                 Create Account
                                 </Button>
