@@ -3,14 +3,22 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { BrowserRouter } from 'react-router-dom'
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+
 import './assets/googleFont/googleFont.css'
 
-import { BrowserRouter } from 'react-router-dom'
+const client = new ApolloClient({
+  uri: 'https://localhost:4000',
+  cache: new InMemoryCache()
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,14 +1,19 @@
 {
-    "compilerOptions": {
-      "outDir": "dist",
-      "rootDir": "src",
-      "baseUrl": "src",
-      "lib": ["esnext"],
-      // "target": "es2018", // enable for zeit
-      "skipLibCheck": true,
-      "strict": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true
-    }
-  }
-  
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
+  },
+  "include": ["src"]
+}
