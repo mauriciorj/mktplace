@@ -1,13 +1,13 @@
 {
     "private": true,
-    "name": "pearly-app",
+    "name": "my-market-place",
     "workspaces": {
       "packages": [
         "server",
         "client",
-        "manager"
+        "manager",
+        "web_component_library"
       ]
     },
     "version": "1.0.0"
   }
-  
