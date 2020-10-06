@@ -3,6 +3,13 @@ import './App.less';
 
 import { Route, Switch } from 'react-router-dom'
 
+// import ApolloClient from 'apollo-client';
+// import { InMemoryCache } from 'apollo-cache-inmemory';
+// import { HttpLink } from 'apollo-link-http';
+// import { ApolloProvider } from '@apollo/react-hooks';
+
+//apollo-client @apollo/react-hooks apollo-cache-inmemory apollo-link-http graphql graphql-tag
+
 import MainPage from './container/mainPage/mainPage'
 import RegisterOptions from './container/mainPage/register/registerOption'
 import AboutUs from './container/mainPage/aboutUs/aboutUs'
