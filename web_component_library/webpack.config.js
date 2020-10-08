@@ -1,3 +1,6 @@
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+
 module.exports = {
   module: {
     rules: [
@@ -17,10 +20,17 @@ module.exports = {
 
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: [MiniCssExtractPlugin.loader, { loader: "css-loader", options: { modules: true } }]
       },
     ]
   },
+  plugins:[
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: 'index.html'
+    }),
+    new MiniCssExtractPlugin
+  ],
   resolve: {
     // Add ".ts" and ".tsx" as resolvable extensions.
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
