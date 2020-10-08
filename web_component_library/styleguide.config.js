@@ -1,30 +1,37 @@
-// WORKAROUND 
 // module.exports = {
-//   propsParser: require('react-docgen-typescript').parse,
-//   webpackConfig: require('react-scripts/config/webpack.config'),
+//   components: 'src/components/**/*.js'
+// };
+
+// const theme = require('./theme.js')
+// const { injectBabelPlugin } = require('react-app-rewired')
+// const rewireLess = require('react-app-rewire-less')
+
+// NOTE: ideally this would load directly from here:
+// { components: './node_modules/antd/es/**/index.js' }
+// However, for now I'm just manually copying the components and props
+// hence, not all of them are available.
+
+// module.exports = {
+//   components: 'src/components/**/*.js',
+//   dangerouslyUpdateWebpackConfig(webpackConfig, env) {
+//     webpackConfig = injectBabelPlugin(
+//       ['import', { libraryName: 'antd', style: true }],
+//       webpackConfig
+//     )
+//     webpackConfig = rewireLess.withLoaderOptions({
+//       modifyVars: theme
+//     })(webpackConfig, env)
+//     return webpackConfig
+//   },
 // }
 
+const { addBabelPlugin, addLessLoader } = require('customize-cra');
+
 module.exports = {
-  components: 'src/components/**/*.{jsx,ts,tsx}',
-  webpackConfig: {
-    module: {
-      rules: [
-        // Babel loader will use your project’s babel.config.js
-        {
-          test: /\.(t|j)sx?$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader'
-        },
-        // Other loaders that are needed for your components
-        {
-          test: /\.css$/,
-          use: ['style-loader!css-loader']
-        },
-      ],
-    },
-    resolve: {
-      extensions: ['.js', '.jsx', '.json', '.tsx'],
-      alias: {},
-    },
-  }
-}
+  dangerouslyUpdateWebpackConfig(webpackConfig, env) {
+    webpackConfig = addBabelPlugin(
+      ['import', { libraryName: 'antd', style: true }],
+    )(webpackConfig);
+    return webpackConfig;
+  },
+};
