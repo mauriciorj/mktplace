@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom'
 import './jumbotron.css'
 import jumbotronImg from '../../assets/img/mainPage/jumbotron/jumbotronImg.jpg'
 
-import { Row, Col, Button, Typography, Image } from 'antd'
+import { Row, Col, Typography, Image } from 'antd'
 
 import { Client } from '../../prismic/prismic-configuration'
+
+import { Button } from 'web_component_library'
 
 interface DocPrismic {
     doc: any
@@ -42,7 +44,7 @@ const Jumbotron = () => {
                     <br />
                     <Typography.Title level={4} className="jumbotron-main-page-left-sub-title">We are here to provide the best support for everyone, any time and everywhere.</Typography.Title>
                     <br />
-                    <Link to="/registerOptions"><Button type="primary" shape="round">Create Account</Button></Link>
+                    <Link to="/registerOptions"><Button>Create Account</Button></Link>
                 </Col>
                 <Col span={10} offset={1}>
                     <Image src={jumbotronImg} />
