@@ -1,4 +1,4 @@
-module.exports = async ({ config, mode }: any) => {
+module.exports = async ({ config }) => {
 
   const path = require('path');
 
