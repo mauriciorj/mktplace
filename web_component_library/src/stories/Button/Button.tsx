@@ -29,18 +29,13 @@ export interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = ({
-  primary = false,
-  size = 'medium',
   backgroundColor,
   label,
   ...props
-}) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+}: ButtonProps) => {
   return (
     <BaseButton
       type="primary"
-      //type="button"
-      // className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >

@@ -15,6 +15,18 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "yarn lint",
+      "git add"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -44,6 +56,8 @@
     "eslint-plugin-react": "^7.21.3",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-svelte3": "^2.7.3",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
     "react-is": "^16.13.1",
     "ts-node": "^9.0.0",
