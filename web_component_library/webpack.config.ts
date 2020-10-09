@@ -1,6 +1,6 @@
-const path = require('path');
+module.exports = async ({ config, mode }: any) => {
 
-module.exports = async ({ config, mode }) => {
+  const path = require('path');
 
   config.module.rules.push({
       loader: 'babel-loader',
