@@ -17,6 +17,7 @@
     "@typescript-eslint/parser": "^4.4.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "chalk": "^4.1.0",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^4.3.0",
     "eslint": "^7.11.0",
@@ -26,13 +27,14 @@
     "html-webpack-plugin": "^4.5.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --config webpack.config.js --mode development"
+    "start": "webpack-dev-server --hot --open --color --config webpack.config.js --mode development"
   },
   "husky": {
     "hooks": {
