@@ -12,27 +12,37 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+export const ButtonType: Story<ButtonProps> = (args) => {
+  return(
+    <>
+    <Button type="primary" label="Primary"/>
+    <Button type="ghost" label="Ghost"/>
+    <Button type="dashed" label="Dashed"/>
+    <Button type="link" label="Link"/>
+    <Button type="text" label="Text"/>
+    <Button disabled={true} label="Disabled"/>
+    <Button danger={true} label="Danger"/>
+    <Button label="Default"/>
+    </>
+  )
+}
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
+export const ButtonSize: Story<ButtonProps> = (args) => {
+  return(
+    <>
+    <Button size="small" label="Small"/>
+    <Button size="middle" label="Middle"/>
+    <Button size="large" label="Large"/>
+    </>
+  )
+}
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
-};
+export const ButtonShape: Story<ButtonProps> = (args) => {
+  return(
+    <>
+    <Button shape="circle" label="Circle"/>
+    <Button shape="round" label="Round"/>
+    <Button label="Default"/>
+    </>
+  )
+}

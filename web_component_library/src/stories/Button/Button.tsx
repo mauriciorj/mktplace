@@ -1,24 +1,36 @@
 import React from 'react';
-import './button.css';
+//import './button.css';
 import { Button as BaseButton } from 'antd';
 
 export interface ButtonProps {
   /**
-   * Is this the principal call to action on the page?
+   * Type of button
    */
-  primary?: boolean;
+  type?: 'primary' | 'ghost' | 'dashed' | 'link' | 'text' | 'default';
   /**
    * What background color to use
    */
-  backgroundColor?: string;
+  shape?: 'circle' | 'round';
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'middle' | 'large';
   /**
    * Button contents
    */
   label: string;
+  /**
+  * Disable?
+   */
+  disabled?: boolean;
+  /**
+  * Danger
+   */
+  danger?: boolean;
+  /**
+  * Icon
+   */
+  icon?: any;
   /**
    * Optional click handler
    */
@@ -29,14 +41,11 @@ export interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = ({
-  backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
   return (
     <BaseButton
-      type="primary"
-      style={{ backgroundColor }}
       {...props}
     >
       {label}
