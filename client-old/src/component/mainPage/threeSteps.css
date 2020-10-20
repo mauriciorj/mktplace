@@ -1,0 +1,12 @@
+.threeSteps{
+    padding-top: 30px;
+}
+
+.threeSteps-title{
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+.threeSteps-cards{
+    padding-top: 10px;
+}
