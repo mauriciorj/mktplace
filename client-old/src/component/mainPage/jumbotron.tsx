@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 import './jumbotron.css'
 import jumbotronImg from '../../assets/img/mainPage/jumbotron/jumbotronImg.jpg'
 
-import { Row, Col, Typography, Image } from 'antd'
+import { Row, Col, Typography, Image, Button } from 'antd'
 
 import { Client } from '../../prismic/prismic-configuration'
 
-import { Button } from 'web_component_library'
+//import { Button } from 'web_component_library'
 
 interface DocPrismic {
     doc: any
