@@ -10,7 +10,7 @@
 		"dev": "webpack-dev-server --mode development --env.development --open --hot --progress",
 		"build": "npm run clean && babel src/stories/* -d dist --extensions \".ts,.js\" --copy-files",
 		"clean": "rm -rf dist",
-		"lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
+		"lint": "eslint --ignore-path .eslintignore --quiet --fix",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook"
 	},
@@ -22,8 +22,8 @@
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx,json,css,scss,md}": [
 			"prettier --write",
-			"git add",
-			"eslint --fix"
+			"yarn lint",
+			"git add"
 		]
 	},
 	"author": "",
