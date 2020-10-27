@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Button, Row, Menu, Col, Typography } from 'antd';
 import './Header.css';
+//import "../assets/google-font/fonts.css";
 
 export interface HeaderProps {
 	/**
