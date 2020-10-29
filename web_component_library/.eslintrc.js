@@ -2,6 +2,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es6: true,
+		node: true,
 	},
 	extends: [
 		'eslint:recommended',
@@ -26,5 +27,8 @@ module.exports = {
 		},
 	},
 	plugins: ['react', '@typescript-eslint'],
-	rules: {},
+	rules: {
+		'no-console': 1,
+		'no-unused-vars': 2,
+	},
 };
