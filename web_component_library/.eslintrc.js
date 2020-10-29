@@ -28,6 +28,8 @@ module.exports = {
 	},
 	plugins: ['react', '@typescript-eslint'],
 	rules: {
+		'import/imports-first': 0,
+		'import/newline-after-import': 0,
 		'no-console': 1,
 		'no-unused-vars': 2,
 	},
