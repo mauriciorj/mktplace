@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Button, Row, Menu, Col, Typography } from 'antd';
-import './Header.css';
+import './header.css';
 //import "../assets/google-font/fonts.css";
 
 export interface HeaderProps {
@@ -39,7 +39,7 @@ export interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ logoInfo, headerLinks }: HeaderProps) => {
 	return (
-		<Row justify="start">
+		<Row justify="start" className="header-background">
 			<Col span={8} offset={1}>
 				<Typography.Title level={3} className="logo-title">
 					{logoInfo.map((logo) => (logo.type === 'Text' ? logo.title : 'IMAGE'))}
