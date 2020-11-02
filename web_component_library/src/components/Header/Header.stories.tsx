@@ -2,17 +2,17 @@ import React from 'react';
 
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { Header, HeaderProps } from './Header';
+import { Header as HeaderComponent, HeaderProps } from './Header';
 
 export default {
 	title: 'Components/Header',
-	component: Header,
+	component: HeaderComponent,
 } as Meta;
 
-const HeaderTemplate: Story<HeaderProps> = (args) => <Header {...args} />;
+const HeaderTemplate: Story<HeaderProps> = (args) => <HeaderComponent {...args} />;
 
-export const MainHeader = HeaderTemplate.bind({});
-MainHeader.args = {
+export const Header = HeaderTemplate.bind({});
+Header.args = {
 	logoInfo: [{ 
         type: 'Text', 
         title: 'Pyschy', 

@@ -1,0 +1,26 @@
+.talkingAboutUs {
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.talkingAboutUs-title {
+	text-align: center;
+	font-weight: 500 !important;
+}
+
+.talkingAboutUs-cards {
+	padding-top: 10px;
+}
+
+.talkingAboutUs-card-image {
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+	justify-content: center !important;
+}
+
+.talkingAboutUs-button {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}

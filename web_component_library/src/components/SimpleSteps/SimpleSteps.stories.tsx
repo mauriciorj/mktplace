@@ -4,6 +4,10 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import { SimpleSteps, SimpleStepsProps } from './SimpleSteps';
 
+import threeSteps1 from '../assets/img/threeSteps/3steps-1.jpg';
+import threeSteps2 from '../assets/img/threeSteps/3steps-2.png';
+import threeSteps3 from '../assets/img/threeSteps/3steps-3.jpg';
+
 export default {
 	title: 'Components/SimpleSteps',
 	component: SimpleSteps,
@@ -16,22 +20,19 @@ MainSimpleSteps.args = {
 	mainTitle: '3 simple steps',
 	cardsInfo: [
 		{
-			url:
-				'https://chopra.brightspotcdn.com/dims4/default/8cb0255/2147483647/strip/true/crop/816x323+0+34/resize/1420x562!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Fd1%2F28%2F6c397b119d872e61239f0de660bb%2Fsmilingispowerful.jpg',
+			url: threeSteps1,
 			title: 'Search for a professional',
 			description:
 				'Thousand professionals are available to give the right support to you. Choice the best professional according with your needs and preferences.',
 		},
 		{
-			url:
-				'https://chopra.brightspotcdn.com/dims4/default/8cb0255/2147483647/strip/true/crop/816x323+0+34/resize/1420x562!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Fd1%2F28%2F6c397b119d872e61239f0de660bb%2Fsmilingispowerful.jpg',
+			url: threeSteps2,
 			title: 'Choice the better day and time',
 			description:
 				'Does not matter where you are. You only need have an internet connection. Don\'t miss an appointment due a travel or skip the time with really matters for you. Pickup the best day and time for you easly.',
         },
         {
-			url:
-				'https://chopra.brightspotcdn.com/dims4/default/8cb0255/2147483647/strip/true/crop/816x323+0+34/resize/1420x562!/quality/90/?url=http%3A%2F%2Fchopra-brightspot.s3.amazonaws.com%2Fd1%2F28%2F6c397b119d872e61239f0de660bb%2Fsmilingispowerful.jpg',
+			url: threeSteps3,
 			title: 'Talk with the professional',
 			description:
 				'Have the best professional support online.',
