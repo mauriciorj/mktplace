@@ -1,7 +1,8 @@
 import React from 'react';
-import './jumbotron.css';
+
 import { Row, Col, Typography, Image } from 'antd';
 import { Button } from '../Button/Button';
+import './jumbotron.css';
 
 export interface JumbotronProps {
 	/**

@@ -9,9 +9,9 @@ export default {
 	component: Header,
 } as Meta;
 
-const Template: Story<HeaderProps> = (args) => <Header {...args} />;
+const HeaderTemplate: Story<HeaderProps> = (args) => <Header {...args} />;
 
-export const MainHeader = Template.bind({});
+export const MainHeader = HeaderTemplate.bind({});
 MainHeader.args = {
 	logoInfo: [{ 
         type: 'Text', 

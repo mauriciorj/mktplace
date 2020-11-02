@@ -1,6 +1,7 @@
 import React from 'react';
-import './button.css';
+
 import { Button as BaseButton } from 'antd';
+import './button.css';
 
 export interface ButtonProps {
 	/**
