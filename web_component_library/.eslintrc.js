@@ -37,5 +37,7 @@ module.exports = {
 		'no-confusing-arrow': 0,
 		'no-console': 1,
 		'no-unused-vars': 2,
+		'no-unused-expressions': 'off',
+		'@typescript-eslint/no-unused-expressions': 'error',
 	},
 };
