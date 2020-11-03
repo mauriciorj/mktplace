@@ -9,36 +9,36 @@ export default {
   component: Button,
 } as Meta;
 
-export const ButtonType: Story<ButtonProps> = (args) => {
+export const ButtonType: Story<ButtonProps> = () => {
   return(
     <>
-    <Button type="primary" label="Primary"/>
-    <Button type="ghost" label="Ghost"/>
-    <Button type="dashed" label="Dashed"/>
-    <Button type="link" label="Link"/>
-    <Button type="text" label="Text"/>
-    <Button disabled={true} label="Disabled"/>
-    <Button danger={true} label="Danger"/>
+    <Button type="primary" label="Primary"/>{' '}
+    <Button type="ghost" label="Ghost"/>{' '}
+    <Button type="dashed" label="Dashed"/>{' '}
+    <Button type="link" label="Link"/>{' '}
+    <Button type="text" label="Text"/>{' '}
+    <Button disabled={true} label="Disabled"/>{' '}
+    <Button danger={true} label="Danger"/>{' '}
     <Button label="Default"/>
     </>
   )
 }
 
-export const ButtonSize: Story<ButtonProps> = (args) => {
+export const ButtonSize: Story<ButtonProps> = () => {
   return(
     <>
-    <Button size="small" label="Small"/>
-    <Button size="middle" label="Middle"/>
+    <Button size="small" label="Small"/>{' '}
+    <Button size="middle" label="Middle"/>{' '}
     <Button size="large" label="Large"/>
     </>
   )
 }
 
-export const ButtonShape: Story<ButtonProps> = (args) => {
+export const ButtonShape: Story<ButtonProps> = () => {
   return(
     <>
-    <Button shape="circle" label="Circle"/>
-    <Button shape="round" label="Round"/>
+    <Button shape="circle" label="Circle"/>{' '}
+    <Button shape="round" label="Round"/>{' '}
     <Button label="Default"/>
     </>
   )
