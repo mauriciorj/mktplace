@@ -24,7 +24,7 @@
 			"prettier --write",
 			"yarn lint"
 		],
-		"**/*.css": [
+		"*.css": [
 			"stylelint --syntax=css"
 		  ]
 	},
