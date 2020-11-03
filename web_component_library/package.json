@@ -23,7 +23,10 @@
 		"*.{js,jsx,ts,tsx,md}": [
 			"prettier --write",
 			"yarn lint"
-		]
+		],
+		"**/*.css": [
+			"stylelint --syntax=css"
+		  ]
 	},
 	"author": "",
 	"license": "ISC",
